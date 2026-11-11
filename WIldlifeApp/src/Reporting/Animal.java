@@ -2,8 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Section1;
-
+package Reporting;
+import MainPackage.*;
+import Interfaces.*;
+import Rescue.*;
+import Conservation.*;
+import GUI.*;
+import java.util.ArrayList;
 /**
  *
  * @author Darius Joaquim Alvares

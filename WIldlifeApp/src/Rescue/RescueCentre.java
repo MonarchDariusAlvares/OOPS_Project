@@ -2,8 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Section2;
-
+package Rescue;
+import MainPackage.*;
+import Interfaces.*;
+import GUI.*;
+import Reporting.*;
+import Conservation.*;
+import java.util.ArrayList;
 /**
  *
  * @author Dhruv Menon
@@ -11,9 +16,9 @@ package Section2;
 public class RescueCentre {
     private int centreId;
     private String name, location, phone;
-    private ArrayLIst<RescueCentre> centres;
+    private ArrayList<RescueCentre> centres;
 
-    public RescueCentre(int centreId, String name, String location, String phone, ArrayLIst centres) {
+    public RescueCentre(int centreId, String name, String location, String phone, ArrayList centres) {
         this.centreId = centreId;
         this.name = name;
         this.location = location;

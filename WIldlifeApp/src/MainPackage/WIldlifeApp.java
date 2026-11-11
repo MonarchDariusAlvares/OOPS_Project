@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package MainPackage;
-
+import Interfaces.*;
+import GUI.*;
 /**
  *
  * @author dariu
@@ -15,6 +16,8 @@ public class WIldlifeApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+       MainMenuGUI mainMenu = new MainMenuGUI();
+       mainMenu.setVisible(true);
     }
     
 }
