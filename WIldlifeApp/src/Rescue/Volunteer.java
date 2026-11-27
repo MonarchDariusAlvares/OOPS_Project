@@ -17,15 +17,14 @@ public class Volunteer {
     private int volunteerId;
     private String name, phone, specialisation;
     private boolean available;
-    private ArrayList<Volunteer> volunteers;
+    
 
-    public Volunteer(int volunteerId, String name, String phone, String specialisation, boolean available, ArrayList volunteers) {
+    public Volunteer(int volunteerId, String name, String phone, String specialisation, boolean available) {
         this.volunteerId = volunteerId;
         this.name = name;
         this.phone = phone;
         this.specialisation = specialisation;
         this.available = available;
-        this.volunteers = volunteers;
     }
     
     public void displayVolunteer()

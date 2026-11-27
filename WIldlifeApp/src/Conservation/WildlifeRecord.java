@@ -16,14 +16,12 @@ import java.util.ArrayList;
 public class WildlifeRecord {
     private int recordId;
     private String species, habitat, populationStatus;
-    private ArrayList<WildlifeRecord> wildlifeRecords;
 
-    public WildlifeRecord(int recordId, String species, String habitat, String populationStatus, ArrayList wildlifeRecords) {
+    public WildlifeRecord(int recordId, String species, String habitat, String populationStatus) {
         this.recordId = recordId;
         this.species = species;
         this.habitat = habitat;
         this.populationStatus = populationStatus;
-        this.wildlifeRecords = wildlifeRecords;
     }
     
     public void displayRecord()

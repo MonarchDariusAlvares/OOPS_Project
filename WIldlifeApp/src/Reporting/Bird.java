@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class Bird extends Animal{
     private double wingspan;
 
-    public Bird(double wingspan, int animalId, String species, String location, String condition, ArrayList animals) {
-        super(animalId, species, location, condition, animals);
+    public Bird(double wingspan, int animalId, String species, String location, String condition) {
+        super(animalId, species, location, condition);
         this.wingspan = wingspan;
     }
 

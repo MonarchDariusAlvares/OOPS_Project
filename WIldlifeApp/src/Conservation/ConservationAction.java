@@ -17,15 +17,13 @@ public class ConservationAction implements Trackable, Reportable{
     private int actionId;
     private String actionName, description, status;
     private WildlifeRecord species;
-    private ArrayList<ConservationAction> conservationActions;
 
-    public ConservationAction(int actionId, String actionName, String description, String status, WildlifeRecord species, ArrayList conservationActions) {
+    public ConservationAction(int actionId, String actionName, String description, String status, WildlifeRecord species) {
         this.actionId = actionId;
         this.actionName = actionName;
         this.description = description;
         this.status = status;
         this.species = species;
-        this.conservationActions = conservationActions;
     }
     
     public void displayAction()

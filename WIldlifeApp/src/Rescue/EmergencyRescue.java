@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class EmergencyRescue extends RescueMission{
     private int priorityLevel;
 
-    public EmergencyRescue(int priorityLevel, int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre, ArrayList missions) {
-        super(missionId, status, report, volunteer, rescueCentre, missions);
+    public EmergencyRescue(int priorityLevel, int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre) {
+        super(missionId, status, report, volunteer, rescueCentre);
         this.priorityLevel = priorityLevel;
     }
 

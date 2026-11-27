@@ -17,8 +17,8 @@ public class EndangeredSpecies extends WildlifeRecord{
     private int estimatedPopulation;
     private String riskLevel;
 
-    public EndangeredSpecies(int estimatedPopulation, String riskLevel, int recordId, String species, String habitat, String populationStatus, ArrayList wildlifeRecords) {
-        super(recordId, species, habitat, populationStatus, wildlifeRecords);
+    public EndangeredSpecies(int estimatedPopulation, String riskLevel, int recordId, String species, String habitat, String populationStatus) {
+        super(recordId, species, habitat, populationStatus);
         this.estimatedPopulation = estimatedPopulation;
         this.riskLevel = riskLevel;
     }

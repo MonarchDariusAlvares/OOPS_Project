@@ -220,6 +220,7 @@ public class RescueManagementGUI extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void rescueManagementExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rescueManagementExitButtonActionPerformed

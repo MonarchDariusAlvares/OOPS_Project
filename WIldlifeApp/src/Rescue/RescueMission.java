@@ -19,15 +19,14 @@ public class RescueMission implements Trackable{
    private WildlifeReport report;
    private Volunteer volunteer;
    private RescueCentre rescueCentre;
-   private ArrayList<RescueMission> missions;
+   
 
-    public RescueMission(int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre, ArrayList missions) {
+    public RescueMission(int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre) {
         this.missionId = missionId;
         this.status = status;
         this.report = report;
         this.volunteer = volunteer;
         this.rescueCentre = rescueCentre;
-        this.missions = missions;
     }
    
    public void displayMission()

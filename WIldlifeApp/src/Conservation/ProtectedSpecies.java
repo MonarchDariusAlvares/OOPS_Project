@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class ProtectedSpecies extends WildlifeRecord{
     private String protectionStatus, protectedArea;
 
-    public ProtectedSpecies(String protectionStatus, String protectedArea, int recordId, String species, String habitat, String populationStatus, ArrayList wildlifeRecords) {
-        super(recordId, species, habitat, populationStatus, wildlifeRecords);
+    public ProtectedSpecies(String protectionStatus, String protectedArea, int recordId, String species, String habitat, String populationStatus) {
+        super(recordId, species, habitat, populationStatus);
         this.protectionStatus = protectionStatus;
         this.protectedArea = protectedArea;
     }

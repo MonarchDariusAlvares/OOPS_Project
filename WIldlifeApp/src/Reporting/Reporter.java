@@ -16,14 +16,13 @@ import java.util.ArrayList;
 public class Reporter {
     private int reporterId;
     private String name, phone, email;
-    private ArrayList<Reporter> reporters;
+    
 
-    public Reporter(int reporterId, String name, String phone, String email, ArrayList reporters) {
+    public Reporter(int reporterId, String name, String phone, String email) {
         this.reporterId = reporterId;
         this.name = name;
         this.phone = phone;
         this.email = email;
-        this.reporters = reporters;
     }
 
     public int getReporterId() {

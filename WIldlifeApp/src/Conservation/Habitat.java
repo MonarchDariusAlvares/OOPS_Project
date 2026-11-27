@@ -17,15 +17,13 @@ public class Habitat {
     private int habitatId;
     private String name, location, habitatType;
     private boolean protectedArea;
-    private ArrayList<Habitat> habitats;
 
-    public Habitat(int habitatId, String name, String location, String habitatType, boolean protectedArea, ArrayList habitats) {
+    public Habitat(int habitatId, String name, String location, String habitatType, boolean protectedArea) {
         this.habitatId = habitatId;
         this.name = name;
         this.location = location;
         this.habitatType = habitatType;
         this.protectedArea = protectedArea;
-        this.habitats = habitats;
     }
     
     public void displayHabitat()

@@ -16,14 +16,12 @@ import java.util.ArrayList;
 public class Animal {
     private int animalId;
     private String species, location, condition;
-    private ArrayList<Animal> animals;
 
-    public Animal(int animalId, String species, String location, String condition, ArrayList animals) {
+    public Animal(int animalId, String species, String location, String condition) {
         this.animalId = animalId;
         this.species = species;
         this.location = location;
         this.condition = condition;
-        this.animals = animals;
     }
     
     public void displayAnimal()

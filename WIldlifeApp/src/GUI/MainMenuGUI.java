@@ -3,12 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package GUI;
-import MainPackage.*;
-import Interfaces.*;
-import Reporting.*;
-import Rescue.*;
-import Conservation.*;
-import java.util.ArrayList;
+import java.awt.Color;
 import javax.swing.JOptionPane;
 /**
  *
@@ -40,13 +35,15 @@ public class MainMenuGUI extends javax.swing.JFrame {
         mainMenuConservation = new javax.swing.JButton();
         mainMenuRescue = new javax.swing.JButton();
         mainMenuExitButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        mainMenuTitleLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         mainMenuQuestionLabel.setText("What Would You Like To Do?");
 
         mainMenuReporting.setText("REPORT WILDLIFE");
+        mainMenuReporting.setToolTipText("hhhh");
         mainMenuReporting.setFocusable(false);
         mainMenuReporting.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         mainMenuReporting.addActionListener(this::mainMenuReportingActionPerformed);
@@ -64,49 +61,56 @@ public class MainMenuGUI extends javax.swing.JFrame {
 
         mainMenuExitButton.setText("EXIT");
         mainMenuExitButton.setFocusable(false);
+        mainMenuExitButton.setInheritsPopupMenu(true);
         mainMenuExitButton.addActionListener(this::mainMenuExitButtonActionPerformed);
 
-        jLabel1.setText("Wildlife Watch");
+        mainMenuTitleLabel.setText("Wildlife Watch");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(143, 143, 143)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(109, 109, 109)
-                            .addComponent(mainMenuQuestionLabel))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(314, 314, 314)
                         .addComponent(mainMenuExitButton))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(mainMenuConservation)
-                        .addComponent(mainMenuRescue)
-                        .addComponent(mainMenuReporting)))
-                .addContainerGap(136, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(256, 256, 256)
+                        .addComponent(mainMenuQuestionLabel)))
+                .addGap(201, 304, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(mainMenuTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(329, 329, 329))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(mainMenuRescue, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
+                    .addComponent(mainMenuConservation, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mainMenuReporting, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
+                .addGap(40, 40, 40)
+                .addComponent(mainMenuTitleLabel)
                 .addGap(18, 18, 18)
                 .addComponent(mainMenuQuestionLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addComponent(mainMenuReporting)
-                .addGap(18, 18, 18)
-                .addComponent(mainMenuRescue)
-                .addGap(18, 18, 18)
-                .addComponent(mainMenuConservation)
-                .addGap(37, 37, 37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
+                .addComponent(mainMenuReporting, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mainMenuRescue, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mainMenuConservation, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(84, 84, 84)
                 .addComponent(mainMenuExitButton)
                 .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void mainMenuExitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMenuExitButtonActionPerformed
@@ -163,11 +167,11 @@ public class MainMenuGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton mainMenuConservation;
     private javax.swing.JButton mainMenuExitButton;
     private javax.swing.JLabel mainMenuQuestionLabel;
     private javax.swing.JButton mainMenuReporting;
     private javax.swing.JButton mainMenuRescue;
+    private javax.swing.JLabel mainMenuTitleLabel;
     // End of variables declaration//GEN-END:variables
 }

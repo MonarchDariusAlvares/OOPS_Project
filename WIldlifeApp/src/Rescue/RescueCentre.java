@@ -16,14 +16,13 @@ import java.util.ArrayList;
 public class RescueCentre {
     private int centreId;
     private String name, location, phone;
-    private ArrayList<RescueCentre> centres;
+    
 
-    public RescueCentre(int centreId, String name, String location, String phone, ArrayList centres) {
+    public RescueCentre(int centreId, String name, String location, String phone) {
         this.centreId = centreId;
         this.name = name;
         this.location = location;
         this.phone = phone;
-        this.centres = centres;
     }
    
     public void displayCentre()

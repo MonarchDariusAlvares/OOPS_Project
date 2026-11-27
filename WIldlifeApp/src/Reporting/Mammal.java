@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class Mammal extends Animal{
     private String furColor;
 
-    public Mammal(String furColor, int animalId, String species, String location, String condition, ArrayList animals) {
-        super(animalId, species, location, condition, animals);
+    public Mammal(String furColor, int animalId, String species, String location, String condition) {
+        super(animalId, species, location, condition);
         this.furColor = furColor;
     }
 

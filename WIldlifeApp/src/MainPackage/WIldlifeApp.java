@@ -5,6 +5,7 @@
 package MainPackage;
 import Interfaces.*;
 import GUI.*;
+
 /**
  *
  * @author dariu
@@ -18,6 +19,7 @@ public class WIldlifeApp {
         // TODO code application logic here
        MainMenuGUI mainMenu = new MainMenuGUI();
        mainMenu.setVisible(true);
+       
     }
     
 }

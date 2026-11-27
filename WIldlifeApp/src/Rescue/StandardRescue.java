@@ -16,8 +16,8 @@ import java.util.ArrayList;
 public class StandardRescue extends RescueMission{
     private String scheduledTime;
 
-    public StandardRescue(String scheduledTime, int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre, ArrayList missions) {
-        super(missionId, status, report, volunteer, rescueCentre, missions);
+    public StandardRescue(String scheduledTime, int missionId, String status, WildlifeReport report, Volunteer volunteer, RescueCentre rescueCentre) {
+        super(missionId, status, report, volunteer, rescueCentre);
         this.scheduledTime = scheduledTime;
     }
 
